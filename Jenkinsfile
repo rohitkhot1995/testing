@@ -1,6 +1,6 @@
 node {
   stage('SCM') {
-    checkout scm
+    git 'https://github.com/rohitkhot1995/testing.git'
   }
   stage('SonarQube Analysis') {
     def scannerHome = tool 'SonarScanner for MSBuild'
