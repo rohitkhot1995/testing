@@ -1,6 +1,6 @@
 node {
   stage('SCM') {
-    git 'https://github.com/rohitkhot1995/testing.git'
+     git branch: 'main', credentialsId: 'github', url: 'https://github.com/rohitkhot1995/testing.git'
   }
   stage('Build + SonarQube analysis') {
     def sqScannerMsBuildHome = tool 'Scanner for MSBuild 4.6'
