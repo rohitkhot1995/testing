@@ -1,0 +1,171 @@
+﻿
+@model Gaming.Predictor.Admin.Models.TemplateModel
+
+<form id="templateIngestionForm" action="@String.Concat(ViewBag.BasePath, "TemplateIngestion")" method="post">
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row pad-botm">
+                <div class="col-md-12">
+                    <h4 class="header-line">TEMPLATE INGESTION</h4>
+                </div>
+            </div>
+
+            @await Component.InvokeAsync("Message", new { component = ViewBag?.MessageType, message = ViewBag?.MessageText })
+
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <div class="dataTables_wrapper form-inline" role="grid">
+                                <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Asset</th>
+                                            <th class="text-center">Body</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">Pre Header Template</td>
+                                            <td class="text-center">
+                                                <textarea asp-for="PreHeaderTemplate" rows="5" cols="40"
+                                                          placeholder="*PreHeaderTemplate" class="form-control">
+                                                    @*@ViewBag.PreHeaderTemplate*@
+                                                </textarea>
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" onclick="return submitAlert();" name="process" value="PreHeaderTemplate">Populate</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Post Footer Template</td>
+                                            <td class="text-center">
+                                                <textarea asp-for="PostFooterTemplate" rows="5" cols="40"
+                                                          placeholder="*PostFooterTemplate" class="form-control">
+                                                    @*@ViewBag.PostFooterTemplate*@
+                                                </textarea>
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" onclick="return submitAlert();" name="process" value="PostFooterTemplate">Populate</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Post Unavailable Template</td>
+                                            <td></td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" onclick="return submitAlert();" name="process" value="PostUnavailableViewTemplate">Populate</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br />
+                                <br />
+                                <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Asset</th>
+                                            <th class="text-center">Language</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">
+                                                Page Template
+                                            </td>
+                                            <td class="text-center">
+                                                <span style="padding-left : 100px">
+                                                    <select asp-for="LangCode" class="form-control"
+                                                            asp-items="@(new SelectList(Model.LangList, "Id", "Name"))"
+                                                            onchange="this.form.submit()"></select>
+                                                </span>
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" onclick="return submitAlert();"
+                                                        name="process" value="PageTemplate">
+                                                    Populate
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">
+                                                Page Template Mobile
+                                            </td>
+                                            <td class="text-center">
+                                                <span style="padding-left : 100px">
+                                                    <select asp-for="LangCode" class="form-control"
+                                                            asp-items="@(new SelectList(Model.LangList, "Id", "Name"))"
+                                                            onchange="this.form.submit()"></select>
+                                                </span>
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" onclick="return submitAlert();"
+                                                        name="process" value="PageTemplateMobile">
+                                                    Populate
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <br />
+                                <br />
+                                <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Asset</th>
+                                            <th class="text-center">Body</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">Gameplay Meta Tags</td>
+                                            <td class="text-center">
+                                                <textarea asp-for="GamePlayPageMetaTags" rows="5" cols="40"
+                                                          placeholder="*GamePlayPageMetaTags" class="form-control">
+                                                    @*@ViewBag.PreHeaderTemplate*@
+                                                </textarea>
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" onclick="return submitAlert();" name="process" value="GamePlayPageMetaTags">Populate</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Rules Meta Tags</td>
+                                            <td class="text-center">
+                                                <textarea asp-for="RulesPageMetaTags" rows="5" cols="40"
+                                                          placeholder="*RulesPageMetaTags" class="form-control">
+                                                    @*@ViewBag.PostFooterTemplate*@
+                                                </textarea>
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" onclick="return submitAlert();" name="process" value="RulesPageMetaTags">Populate</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">FAQ Meta Tags</td>
+                                            <td class="text-center">
+                                                <textarea asp-for="FAQPageMetaTags" rows="5" cols="40"
+                                                          placeholder="*FAQPageMetaTags" class="form-control">
+                                                    @*@ViewBag.PostFooterTemplate*@
+                                                </textarea>
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" onclick="return submitAlert();" name="process" value="FAQPageMetaTags">Populate</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

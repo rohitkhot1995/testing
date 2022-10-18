@@ -1,0 +1,14 @@
+﻿@model Gaming.Predictor.Admin.Models.MatchAnswersModel
+
+@*<form id="matchAnswersForm" asp-controller="Home" asp-action="MatchAnswers">*@
+<form id="matchAnswersForm" action="@String.Concat(ViewBag.BasePath, "MatchAnswers")" method="post">
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row pad-botm">
+                <div class="col-md-12">
+                    <h4 class="header-line">FEED INGESTION</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

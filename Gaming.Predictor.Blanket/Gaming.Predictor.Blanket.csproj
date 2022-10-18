@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CoreCompat.System.Drawing.v2" Version="5.2.0-preview1-r131" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gaming.Predictor.Contracts\Gaming.Predictor.Contracts.csproj" />
+    <ProjectReference Include="..\Gaming.Predictor.DataAccess\Gaming.Predictor.DataAccess.csproj" />
+    <ProjectReference Include="..\Gaming.Predictor.Library\Gaming.Predictor.Library.csproj" />
+  </ItemGroup>
+
+</Project>

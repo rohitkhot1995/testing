@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+<html>
+<link href="@ViewBag.BasePath/login/css/bootstrap.css" rel="stylesheet" />
+<!-- FONT AWESOME STYLE  -->
+<link href="@ViewBag.BasePath/login/css/font-awesome.css" rel="stylesheet" />
+<!-- CUSTOM STYLE  -->
+<link href="@ViewBag.BasePath/login/css/style.css" rel="stylesheet" />
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel='stylesheet' type='text/css' />
+<!-- CORE JQUERY  -->
+<script src="@ViewBag.BasePath/login/js/jquery-1.10.2.js"></script>
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="@ViewBag.BasePath/login/js/bootstrap.js"></script>
+<!-- CUSTOM SCRIPTS  -->
+<script src="@ViewBag.BasePath/login/js/custom.js"></script>
+
+
+@model Gaming.Predictor.Web.Models.DummyLogin;
+
+<form id="loginForm" action="DemoLogin" method="post">
+
+    @*<form id="loginForm" asp-controller="Home" action="@String.Concat(ViewBag.BasePath, "Login")" method="post">*@
+    <table width="20%" align="center" style="margin-top: 100px;">
+        <tr>
+            <td align="center">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        Gaming Demo Login
+                    </div>
+
+
+
+                    <input type="hidden" name="redirect" value="@ViewBag.Redirect" />
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label asp-for="FullName">Username</label>
+                            <input class="form-control" asp-for="FullName" required />
+                            <span asp-validation-for="FullName" class="validation-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="SocialId">SocialId</label>
+                            <input class="form-control" asp-for="SocialId" required />
+                            <span asp-validation-for="SocialId" class="validation-danger"></span>
+                        </div>
+                        @if (String.IsNullOrEmpty(ViewBag.Redirect))
+                        {
+                            <div class="alert alert-danger">
+                                <strong>Missing Parameter</strong>
+                            </div>
+                        }
+                        else
+                        {
+                            <input type="submit" class="btn btn-success" value="Login" />
+                        }
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</form>
+</html>

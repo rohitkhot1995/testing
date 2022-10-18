@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.1\Gaming.Predictor.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>D:\GitHub\gaming-royalstag-predictor\Gaming.Predictor.API\Gaming.Predictor.API.xml</DocumentationFile>
+    <OutputPath>bin\Release\netcoreapp3.1\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.3.6" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gaming.Predictor.Blanket\Gaming.Predictor.Blanket.csproj" />
+    <ProjectReference Include="..\Gaming.Predictor.Contracts\Gaming.Predictor.Contracts.csproj" />
+    <ProjectReference Include="..\Gaming.Predictor.Interfaces\Gaming.Predictor.Interfaces.csproj" />
+    <ProjectReference Include="..\Gaming.Predictor.Library\Gaming.Predictor.Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ImageSharing\Fonts\" />
+    <Folder Include="ImageSharing\Images\Teams\" />
+    <Folder Include="ImageSharing\Images\Template\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,107 @@
+﻿
+@model Gaming.Predictor.Admin.Models.MatchSimulationModel
+
+@*<form id="feedIngestionForm" asp-controller="Home" asp-action="FeedIngestion">*@
+<form id="matchsimulationnForm" action="@String.Concat(ViewBag.BasePath,"MatchSimulation")" method="post">
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row pad-botm">
+                <div class="col-md-12">
+                    <h4 class="header-line">Match Simulation</h4>
+                </div>
+            </div>
+
+            @await Component.InvokeAsync("Message", new { component = ViewBag?.MessageType, message = ViewBag?.MessageText })
+
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Advanced Tables -->
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <div class="dataTables_wrapper form-inline" role="grid">
+                                <table class="table table-striped table-bordered table-hover dataTable no-footer">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Asset</th>
+                                            <th class="text-center">Input</th>
+                                            <th class="text-center">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-center">Match</td>
+                                            <td class="text-center">
+                                                <select asp-for="MatchId" class="form-control" asp-items="@(new SelectList(Model.Matches, "Id", "MatchName"))" onchange="this.form.submit()"></select>
+                                            </td>
+                                            <td class="text-center">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Question</td>
+                                            <td class="text-center">
+                                                <select asp-for="QuestionId" class="form-control" asp-items="@(new SelectList(Model.Questions, "Id", "QuestionDescription"))" onchange="this.form.submit()"></select>
+                                            </td>
+                                            <td class="text-center">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-center">Question Answer Process Update</td>
+                                            <td class="text-center">                                                
+                                            </td>
+                                            <td class="text-center">
+                                                <button type="submit" class="btn btn-info" name="process" value="questionanswerprocessupdate">Submit</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                            @if (Model.Options != null && Model.Options.Count > 0)
+                            {
+                                <br /><br />
+                                <table class="table table-striped table-bordered table-hover dataTable no-footer" id="listTable">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                
+                                            </th>
+                                            @*<th class="text-center">Sr. no.</th>*@
+                                            <th class="text-center">Option Id</th>
+                                            <th class="text-center">Option</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @for (int i = 0; i < Model.Options.Count; i++)
+                                        {
+                                            <tr>
+                                                <td class="text-center">
+                                                    <input type="checkbox" asp-for="Options[i].checkBox" />
+                                                </td>
+                                                @*<td class="text-center">
+                                                    @(i + 1)
+                                                </td>*@
+                                                <td class="text-center">
+                                                    <input type="hidden" asp-for="Options[i].Id" />
+                                                    @Model.Options[i].Id
+                                                </td>
+                                                <td class="text-center">
+                                                    @*<input type="text" asp-for="Options[i].OptionDescription" value="@Model.Options[i].OptionDescription" />*@
+                                                    @Model.Options[i].OptionDescription
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                                <div style="text-align: center;">
+                                    <button type="submit" class="btn btn-info" onclick="return submitAlert();" name="process" value="submit">Submit</button>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

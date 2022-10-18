@@ -1,0 +1,572 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Demo.Login\\Gaming.Predictor.Demo.Login.csproj": {}
+  },
+  "projects": {
+    "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Blanket\\Gaming.Predictor.Blanket.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Blanket\\Gaming.Predictor.Blanket.csproj",
+        "projectName": "Gaming.Predictor.Blanket",
+        "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Blanket\\Gaming.Predictor.Blanket.csproj",
+        "packagesPath": "C:\\Users\\Asim\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Blanket\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Asim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj"
+              },
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataAccess\\Gaming.Predictor.DataAccess.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataAccess\\Gaming.Predictor.DataAccess.csproj"
+              },
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "CoreCompat.System.Drawing.v2": {
+              "target": "Package",
+              "version": "[5.2.0-preview1-r131, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj",
+        "projectName": "Gaming.Predictor.Contracts",
+        "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Asim\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Asim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataAccess\\Gaming.Predictor.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataAccess\\Gaming.Predictor.DataAccess.csproj",
+        "projectName": "Gaming.Predictor.DataAccess",
+        "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataAccess\\Gaming.Predictor.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Asim\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Asim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataInitializer\\Gaming.Predictor.DataInitializer.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataInitializer\\Gaming.Predictor.DataInitializer.csproj"
+              },
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\Gaming.Predictor.Interfaces.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\Gaming.Predictor.Interfaces.csproj"
+              },
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataInitializer\\Gaming.Predictor.DataInitializer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataInitializer\\Gaming.Predictor.DataInitializer.csproj",
+        "projectName": "Gaming.Predictor.DataInitializer",
+        "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataInitializer\\Gaming.Predictor.DataInitializer.csproj",
+        "packagesPath": "C:\\Users\\Asim\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.DataInitializer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Asim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj"
+              },
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Npgsql": {
+              "target": "Package",
+              "version": "[4.0.4, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Demo.Login\\Gaming.Predictor.Demo.Login.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Demo.Login\\Gaming.Predictor.Demo.Login.csproj",
+        "projectName": "Gaming.Predictor.Demo.Login",
+        "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Demo.Login\\Gaming.Predictor.Demo.Login.csproj",
+        "packagesPath": "C:\\Users\\Asim\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Demo.Login\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Asim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Blanket\\Gaming.Predictor.Blanket.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Blanket\\Gaming.Predictor.Blanket.csproj"
+              },
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj"
+              },
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\Gaming.Predictor.Interfaces.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\Gaming.Predictor.Interfaces.csproj"
+              },
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\Gaming.Predictor.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\Gaming.Predictor.Interfaces.csproj",
+        "projectName": "Gaming.Predictor.Interfaces",
+        "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\Gaming.Predictor.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\Asim\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Asim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
+            "projectReferences": {
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj",
+        "projectName": "Gaming.Predictor.Library",
+        "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\Gaming.Predictor.Library.csproj",
+        "packagesPath": "C:\\Users\\Asim\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Library\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Asim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Contracts\\Gaming.Predictor.Contracts.csproj"
+              },
+              "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\Gaming.Predictor.Interfaces.csproj": {
+                "projectPath": "D:\\GitHub\\gaming-royalstag-predictor\\Gaming.Predictor.Interfaces\\Gaming.Predictor.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AWS.Logger.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "AWSSDK.EC2": {
+              "target": "Package",
+              "version": "[3.3.170.11, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.3.110.62, )"
+            },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.3.102.103, )"
+            },
+            "AWSSDK.SimpleEmail": {
+              "target": "Package",
+              "version": "[3.3.101.142, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.3.102.15, )"
+            },
+            "AWSSDK.Transfer": {
+              "target": "Package",
+              "version": "[3.3.108.2, )"
+            },
+            "HtmlAgilityPack.CssSelectors.NetCore": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.1.4, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.0.519, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.4.1, )"
+            },
+            "System.Diagnostics.Debug": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

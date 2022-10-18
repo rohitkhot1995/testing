@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gaming.Predictor.Blanket\Gaming.Predictor.Blanket.csproj" />
+    <ProjectReference Include="..\Gaming.Predictor.Contracts\Gaming.Predictor.Contracts.csproj" />
+    <ProjectReference Include="..\Gaming.Predictor.Interfaces\Gaming.Predictor.Interfaces.csproj" />
+    <ProjectReference Include="..\Gaming.Predictor.Library\Gaming.Predictor.Library.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Update="appsettings.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	
+</Project>

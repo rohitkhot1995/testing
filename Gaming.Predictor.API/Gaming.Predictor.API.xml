@@ -1,0 +1,258 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gaming.Predictor.API</name>
+    </assembly>
+    <members>
+        <member name="M:Gaming.Predictor.API.Controllers.FeedController.Ping">
+            <summary>
+            API Status check
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.FeedController.Languages(System.String)">
+            <summary>
+            Returns all the available languages
+            </summary>
+            <param name="backdoor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.FeedController.TourFixtures(System.String,System.String)">
+            <summary>
+            Returns language-wise fixtures for the tournament
+            </summary>
+            <param name="lang">Language | Default = en</param>
+            <param name="backdoor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.FeedController.MatchQuestions(System.Int32,System.String)">
+            <summary>
+            Returns Question for the match.
+            </summary>
+            <param name="MatchId">MatchId</param>
+            <param name="backdoor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.FeedController.GetConstraints(System.String)">
+            <summary>
+            Return Sport Constraints
+            </summary>
+            <param name="backdoor">Request Authentication Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.GameplayController.RecentResults(System.String)">
+            <summary>
+            Return recent results of teams.
+            </summary>
+            <param name="backdoor">backdoor</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.GameplayController.MatchInningStatus(System.Int32,System.String)">
+            <summary>
+            Returns match status and match inning status of match.
+            </summary>
+            <param name="MatchId">MatchId</param>
+            <param name="backdoor">backdoor</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.GameplayController.GetPredictions(System.Int32,System.Int32,System.String)">
+            <summary>
+            Returns prediction submitted by users.
+            </summary>
+            <param name="MatchId">MatchId</param>
+            <param name="GameDayId">GameDayId</param>
+             <param name="userguid">The GUID of the user</param>
+            <param name="backdoor">backdoor</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.GameplayController.GetUserMatchPredicts(System.String)">
+            <summary>
+            Returns Match Detail of User Predict
+            </summary>
+            <param name="SportId">Sport ID</param>
+            <param name="backdoor">Request Authentication Key</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Gaming.Predictor.API.Controllers.GameplayController.GetUserMatchRank(System.String,System.String)" -->
+        <member name="M:Gaming.Predictor.API.Controllers.GameplayController.UserPrediction(Gaming.Predictor.Contracts.Feeds.UserPredictionPayload,System.String)">
+            <summary>
+            Submit the User's predictions.
+            </summary>
+            <param name="MatchId">MatchId</param>
+            <param name="TourGamedayId">TourGamedayId</param>
+            <param name="QuestionId">QuestionId</param>
+            <param name="OptionId">OptionId</param>
+            <param name="BetCoin">BetCoin</param>
+            <param name="PlatformId">PlatformId - 3 Web</param>
+            <param name="userguid">The GUID of the user</param>
+            <param name="backdoor">backdoor</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.GameplayController.UserPredictionBet(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Submit the User's predictions.
+            </summary>
+            <param name="MatchId">MatchId</param>
+            <param name="TourGamedayId">TourGamedayId</param>
+            <param name="QuestionId">QuestionId</param>
+            <param name="OptionId">OptionId</param>
+            <param name="PlatformId">PlatformId - 3 Web</param>
+            <param name="BetCoin">PlatformId - 1 Android | 2 IOS</param>
+            <param name="userguid">The GUID of the user</param>
+            <param name="backdoor">backdoor</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Gaming.Predictor.API.Controllers.GameplayController.GetUserBalance(System.String)" -->
+        <member name="M:Gaming.Predictor.API.Controllers.GameplayController.ApplyJoker(Gaming.Predictor.Contracts.Feeds.AppkyJokerPayload,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="optType"></param>
+            <param name="matchId"></param>
+            <param name="gamedayId"></param>
+            <param name="boosterId"></param>
+            <param name="platformId"></param>
+            <param name="questionId"></param>
+            <param name="backdoor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.LeaderboardController.GetLeaderboard(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            GET LEADERBOARD
+            </summary>
+            <param name="optType">1 for Overall  | 2 for Match </param>
+            <param name="gamedayID"> Required Gameday ID</param>
+            <param name="phaseId"> PhaseId </param>
+            <param name="backdoor"> Request Authentication Key </param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.LeaderboardController.GetUserRank(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Return User Rank And points
+            </summary>
+            <param name="optType">1 for Overall  | 2 for Match </param>
+            <param name="gamedayId"> Required Gameday ID</param>
+            <param name="phaseId"> Phase ID</param>
+            <param name="backdoor">Request Authentication Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.LeaderboardController.GetPlayedGameDays(System.String)">
+            <summary>
+            Returns played gamedays.
+            </summary>
+            <param name="backdoor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.LeaderboardController.GetLeaderboardCombine(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            GET COMBINE LEADERBOARD
+            </summary>
+            <param name="optType">1 for Overall  | 2 for Week </param>
+            <param name="gamedayID"> Gameday ID</param>
+            <param name="weekId"> Week Id </param>
+            <param name="backdoor"> Request Authentication Key </param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.LeaderboardController.GetUserRankCombine(System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Return User Combine Rank And points
+            </summary>
+            <param name="optType">1 for Overall  | 2 for Week </param>
+            <param name="gamedayId"> Gameday ID</param>
+            <param name="weekId"> Week ID</param>
+            <param name="backdoor">Request Authentication Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.LiveController.CurrentGamedayMatches(System.String)">
+            <summary>
+            Returns Current Gameday Matches  
+            </summary>
+            <param name="backdoor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.LiveController.GetMixAPI(System.String)">
+            <summary>
+            MIX API 
+            </summary>
+            <param name="backdoor">Request Authentication Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.LiveController.GetTourStatus(System.String)">
+            <summary>
+            Tour Status 
+            </summary>
+            <param name="backdoor">Request Authentication Key</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.NotificationController.Subscription(Gaming.Predictor.Contracts.Notification.Subscription,System.String)">
+            <summary>
+            Performs subscription related operations
+            </summary>
+            <param name="subscription">Post Data</param>
+            <param name="backdoor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.NotificationController.DeviceUpdate(Gaming.Predictor.Contracts.Notification.Subscription,System.String)">
+            <summary>
+            Updates the user's subscription details on device update
+            </summary>
+            <param name="subscription">Post Data</param>
+            <param name="backdoor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.NotificationController.GetUserSubscription(System.String,System.String)">
+            <summary>
+            Get Events subscribed by a user
+            </summary>
+            <param name="deviceId"> Id of the user's Device </param>
+            <param name="backdoor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.ShareController.Generate(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            Generates Share Image.
+            </summary>
+            <param name="userguid">The GUID of the user</param>
+            <param name="matchid">MatchId</param>
+            <param name="gamedayid">GamedayId</param>
+            <param name="backdoor">backdoor</param>
+            <returns></returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.ShareController.GetFbShareMetaTags(System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            WEB - Generates a user's points images and return meta tags to share on Facebook.
+            </summary>        
+            <param name="userguid">User GUID from Cookie</param>
+            <param name="matchid">Id of the match for which the image is to be shared</param>
+            <param name="gamedayid">Id of the gameday for which the image is to be shared</param>
+            <param name="title">Title of the share</param>
+            <param name="description">Description of the share</param>  
+            <param name="redirectLink">Link For Redirect</param>
+            <param name="backdoor"></param>
+            <returns>An Image</returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.ShareController.TwitterPostImage(System.String,System.Int32,System.Int32,System.String,System.String,System.String,System.String)">
+            <summary>
+            WEB - Generates a user's points images and return meta tags to share on Twitter.
+            </summary>        
+            <param name="userguid">User GUID from Cookie</param>
+            <param name="matchid">Id of the match for which the image is to be shared</param>
+            <param name="gamedayid">Id of the gameday for which the image is to be shared</param>
+            <param name="title">Title of the share</param>
+            <param name="description">Description of the share</param>  
+            <param name="redirectLink">Link For Redirect</param>
+            <param name="backdoor"></param>
+            <returns>An Image</returns>
+        </member>
+        <member name="M:Gaming.Predictor.API.Controllers.ShareController.GetShareImage(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            WEB - Get user's points image.     
+            </summary>
+            <param name="userguid">The GUID of the user</param>
+            <param name="matchid">MatchId</param>
+            <param name="gamedayid">GamedayId</param>
+            <param name="backdoor">backdoor</param>
+            <returns>An Image</returns>
+        </member>
+    </members>
+</doc>
