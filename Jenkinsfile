@@ -3,7 +3,6 @@ node {
     checkout scm
   }
   stage('SonarQube Analysis') {
-      updateGitlabCommitStatus name: 'SonarQube Analysis', state: 'pending'
        
         def scannerHome = tool 'SonarScanner for MSBuild'
         withSonarQubeEnv('sonar') {
@@ -13,7 +12,6 @@ node {
           sh "dotnet ${scannerHome}/SonarScanner.MSBuild.dll end"           
         }
 
-      updateGitlabCommitStatus name: 'SonarQube Analysis', state: 'success'
     }
 }
 
