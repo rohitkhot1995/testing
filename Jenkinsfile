@@ -4,8 +4,6 @@ node {
   }
   stage('SonarQube Analysis') {
       updateGitlabCommitStatus name: 'SonarQube Analysis', state: 'pending'
-  
-       {
        
         def scannerHome = tool 'SonarScanner for MSBuild'
         withSonarQubeEnv('sonar') {
@@ -14,7 +12,6 @@ node {
           sh "dotnet build Gaming.Predictor.sln"
           sh "dotnet ${scannerHome}/SonarScanner.MSBuild.dll end"           
         }
-      }
 
       updateGitlabCommitStatus name: 'SonarQube Analysis', state: 'success'
     }
