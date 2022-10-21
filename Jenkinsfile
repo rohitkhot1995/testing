@@ -1,6 +1,6 @@
 node {
   stage('SCM') {
-    check SCM
+    checkout scm
   }
   stage('Build + SonarQube analysis') {
     def sqScannerMsBuildHome = tool 'Scanner for MSBuild'
